@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div id="app">
+        <main class="vh-100 position-relative">
+            <div v-for="disc in discList"
+            class="disc-card py-3 px-2 mb-4 mx-2">
+                <div class="img-box mb-2">
+                    <img class="img-fluid" :src="disc.poster" alt="">
+                </div>
+                <h5>{{disc.title.toUpperCase()}}</h5>
+                <div class="txt-disc">{{disc.author}}</div>
+                <div class="txt-disc">{{disc.year}}</div>
+            </div>
+        </main>
+
+    </div>
+   <script src="../JS/script.js"></script> 
+</body>
+</html>
