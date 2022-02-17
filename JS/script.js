@@ -5,8 +5,9 @@ new Vue({
     },
 
     mounted(){
-        axios.get('http://localhost/php-ajax-dischi/PHP/API/discList.php').then((responseOBJ) =>{
-            this.discList.push(responseOBJ);
+        axios.get('/php-ajax-dischi/PHP/API/discList.php').then((responseOBJ) =>{
+            this.discList=(responseOBJ.data);
+            console.log(responseOBJ)
         })    
     }
 })
