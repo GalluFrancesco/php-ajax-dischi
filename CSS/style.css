@@ -1,0 +1,37 @@
+main{
+    background-color: #1E2D3B;
+}
+
+.container-disc{
+    width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.disc-card{
+    width: 200px;
+    height: 320px;
+    background-color: #2E3A46;
+
+}
+
+.img-box{
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+
+}
+
+img{
+    width: 100%;
+    object-fit: cover;
+}
+
+h5{
+    color: white;
+    
+}
+
+.txt-disc{
+    color:#6E6863;
+}
